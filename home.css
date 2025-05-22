@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@keyframes warmGlow {
+    0% { text-shadow: 2px 2px 5px #9c3d00, 0 0 10px #d76a00; }
+    50% { text-shadow: 3px 3px 10px #ff8c42, 0 0 15px #ffab62; }
+    100% { text-shadow: 2px 2px 5px #9c3d00, 0 0 10px #d76a00; }
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url('images/choicebg.jpg');
+}
+header {
+    text-align: right;
+    padding: 10px;
+}
+.title-container {
+    text-align: center;
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: 200%;
+    font-style: italic;
+    font-family: 'Indie Flower', cursive;
+    color: #F5F5DC;  
+    animation: warmGlow 2s infinite alternate;
+}
+.logout-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.logout-btn:hover {
+    background-color: #c9302c;
+}
+.option1:hover {
+    background-color: #ffb74d;
+    transform: scale(1.1);
+}
+.option2:hover {
+    background-color: #ffb74d;
+    transform: scale(1.1);
+}
+.option1{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5a3e1b;
+    background-color: #ffcc80;
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.option2{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5a3e1b;
+    background-color: #ffcc80;
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}

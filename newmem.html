@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Memory</title>
+    <link rel="stylesheet" href="newmem.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="newmem-script.js" defer></script>
+</head>
+<body>
+    <a href="home.html" class="home">
+        <i class="fa-solid fa-house"></i>
+    </a>
+    <button class="logout-btn" id="logoutBtn">Logout</button>
+    <div class="container">
+        <h1>Add a New Memory</h1>
+
+        <label for="memory-date">Date:</label>
+        <input type="date" id="memory-date" required>
+
+        <label for="memory-text">Memory:</label>
+        <textarea id="memory-text" placeholder="Write your memory here..." required></textarea>
+
+        <label for="memory-type">Memory Type:</label>
+        <select id="memory-type" required>
+            <option value="">Select Type</option>
+            <option value="Happy">Happy</option>
+            <option value="Sad">Sad</option>
+            <option value="Romantic">Romantic</option>
+        </select>
+
+        <div id="drop-area">
+            <p>Drag & Drop Images Here</p>
+            <input type="file" id="file-input" multiple accept="image/*">
+            <div id="preview"></div>
+        </div>
+
+        <button id="save-memory">Save Memory</button>
+    </div>
+
+    <audio autoplay loop>
+        <source src="audio/backgroundmusic.mp3" type="audio/mp3">
+    </audio> 
+</body>
+</html>
